@@ -335,6 +335,7 @@ textarea.input-control{
 }
 
 .form-section .go .main-link{
+    border: 1px solid var(--first-color);
     background: var(--first-color);
     color: var(--white);
     outline: none;
