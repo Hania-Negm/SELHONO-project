@@ -246,6 +246,32 @@ ul , p , h1{
 
 /*#endregion*/
 
+
+/*FaqHero*/
+/*#region*/
+.faq-hero{
+    background-image: url("../imgs/faq-bk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding: 134px 0;
+}
+
+.faq-hero h1{
+    color: var(--white);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "DM Serif Display" , "Serif ";
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 125%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*#endregion*/
+
 /*Form Section*/
 /*#region*/
 .form-section{
@@ -355,6 +381,7 @@ textarea.input-control{
 }
 
 /*#endregion*/
+
 /*Iframe Section*/
 /*#region*/
 .location-section {
@@ -366,6 +393,89 @@ iframe{
     border-radius: 100px;
     min-width: 100%;
     height: 543px;
+}
+/*#endregion*/
+
+/* Question-section*/
+/*#region*/
+.qusetion-section{
+    padding: 100px 0;
+}
+
+.qusetion-section .row{
+    row-gap: 24px;
+}
+
+.qusetion-heading{
+    color: var(--first-color);
+    text-align: center;
+    font-family: "DM Serif Display" , "Serif";
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:50px;
+}
+.accordion-flush>.accordion-item>.accordion-header .accordion-button, .accordion-flush>.accordion-item>.accordion-header .accordion-button.collapsed {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid var(--black)
+}
+
+.accordion{
+    min-height: 100%;
+}
+
+.accordion-button:focus{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-button:hover{
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.accordion-header{
+    color: var(--first-color);
+    font-family: "DM Serif Display" , "Serif ";
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.accordion-item{
+    border: 0;
+}
+
+.accordion-body{
+    color: var(--forth-color);
+    font-family: "Jost", "sans-serif";    font-size: 25px;
+    font-weight: 400;
+}
+
+.col-img-answer{
+    width: 100%;
+    overflow: hidden;
+}
+
+.col-img-answer img{
+    border-radius: 65px;
+    object-fit: contain;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    .qusetion-section .row .col-6{
+        width: 100%;
+    }
+
 }
 /*#endregion*/
 
